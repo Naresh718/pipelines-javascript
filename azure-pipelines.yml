@@ -30,8 +30,6 @@ stages:
         replaceExistingArchive: true
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: drop
-      condition: 
-
 jobs:  
 - deployment: VMDeploy
   displayName: Web deploy
